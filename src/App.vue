@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :style="{'background-image':'url(https://i.pinimg.com/originals/b7/28/15/b7281550966e19f7c2f62d77fa063747.jpg)'}" >
       <Header :numCorrect="numCorrect" :numTotal="numTotal"/>
     <b-container class="bv-example-row">
     <b-row>
@@ -43,7 +43,7 @@ export default {
     }
   },
   mounted: function () {
-    fetch('',{
+    fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple',{
       method:'get'
     }).then((response) => {
       return response.json()
