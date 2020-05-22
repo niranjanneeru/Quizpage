@@ -11,7 +11,7 @@
                                    v-for="(answer,index) in shuffledAnswers" :key="index"
                                    @click.prevent="selectedAnswer(index)"
                                    v-bind:class="answerClass(index)">
-                    {{answer}}
+                    {{answer | filterf}}
                 </b-list-group-item>
             </b-list-group>
             <b-button variant="primary"
