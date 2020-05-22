@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :numCorrect="numCorrect" :numTotal="numTotal"/>
+      <Header :numCorrect="numCorrect" :numTotal="numTotal"/>
     <b-container class="bv-example-row">
     <b-row>
       <b-col sm = "6" offset="3">
@@ -43,7 +43,7 @@ export default {
     }
   },
   mounted: function () {
-    fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple',{
+    fetch('',{
       method:'get'
     }).then((response) => {
       return response.json()
