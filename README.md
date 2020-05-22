@@ -1,4 +1,18 @@
-# quiz1
+# Quiz Page
+
+Made by VUE JS
+
+Gives the users 10 Question and Collects answers 
+Updates Score on each Submit
+
+___
+
+Click here to use the webapp(Firebase link) **"
+[Quiz App](https://quiz-app-d239c.web.app/)"**
+
+The Quiz data is collected through [API](https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple)
+
+___
 
 ## Project setup
 ```
